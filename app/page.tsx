@@ -1,5 +1,7 @@
 import Todos from "@/components/tasklist"
 import { AddTask } from "@/components/newtask"
+import { Button } from "@/components/ui/button";
+import { signout } from "@/app/actions"
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
         <p className="text-5xl text-center">All Tasks</p>
         <AddTask />
         <Todos />
+        <Button onClick={signout}>Sign Out</Button>
       </div>
     </div >
   );
